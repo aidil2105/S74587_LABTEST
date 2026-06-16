@@ -3,15 +3,9 @@
     Created on : 16 Jun 2026, 2:20:21 PM
     Author     : MP3 LECT
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+    <div class="footer" style="background-color: #e0e0e0; text-align: center; padding: 10px; margin-top: 20px;">
+        <p>Server Time: <%= new java.util.Date() %></p>
+    </div>
+</body>
 </html>
