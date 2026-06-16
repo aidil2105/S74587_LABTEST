@@ -42,7 +42,5 @@
     <a href="index.jsp">← Back to Home</a>
 </div>
 
+<!-- Include dynamic footer (This file contains the closing </body> and </html>) -->
 <%@ include file="footer.jsp" %>
-
-</body>
-</html>

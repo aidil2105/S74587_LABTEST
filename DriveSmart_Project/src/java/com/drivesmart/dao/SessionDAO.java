@@ -11,8 +11,8 @@ import java.util.List;
 
 public class SessionDAO {
     private String jdbcURL = "jdbc:mysql://localhost:3306/drivesmart_db";
-    private String jdbcUsername = "admin";       // change as needed
-    private String jdbcPassword = "root";           // change as needed
+    private String jdbcUsername = "root";       // change as needed
+    private String jdbcPassword = "";           // change as needed
 
     // 1. Connection method
     private Connection getConnection() {

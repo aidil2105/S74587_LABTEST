@@ -5,6 +5,7 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%-- FIX: Changed package from .model. to .beans. to match your SessionBean.java --%>
 <%@ page import="java.util.List, com.drivesmart.beans.SessionBean" %>
 <!DOCTYPE html>
 <html>
@@ -38,14 +39,14 @@
             <% 
                 List<SessionBean> list = (List<SessionBean>) request.getAttribute("sessionList");
                 if (list != null && !list.isEmpty()) {
-                    for (SessionBean session : list) { 
+                    for (SessionBean sessionItem : list) { 
             %>
                 <tr>
-                    <td><%= session.getSessionId() %></td>
-                    <td><%= session.getStudentName() %></td>
-                    <td><%= session.getBranchLocation() %></td>
-                    <td><%= session.getLessonType() %></td>
-                    <td><%= session.getStatus() %></td>
+                    <td><%= sessionItem.getSessionId() %></td>
+                    <td><%= sessionItem.getStudentName() %></td>
+                    <td><%= sessionItem.getBranchLocation() %></td>
+                    <td><%= sessionItem.getLessonType() %></td>
+                    <td><%= sessionItem.getStatus() %></td>
                 </tr>
             <% 
                     } 
@@ -62,7 +63,5 @@
     <a href="index.jsp">← Back to Home</a>
 </div>
 
+<!-- Include dynamic footer (This file contains the closing </body> and </html>) -->
 <%@ include file="footer.jsp" %>
-
-</body>
-</html>
